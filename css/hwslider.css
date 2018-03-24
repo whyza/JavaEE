@@ -1,0 +1,154 @@
+.hwslider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    min-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.hwslider ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1
+}
+
+.hwslider ul li {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hwslider ul li.active {
+    display: block;
+}
+
+.hwslider ul li img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    min-width: 60px;
+    height: 12px;
+    z-index: 2;
+}
+
+.dots span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.dots span.active {
+    background: white;
+}
+
+.arr {
+    display: none;
+    position: absolute;
+    top: 43%;
+    z-index: 2;
+    width: 40px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;;
+    font-size: 36px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    text-decoration: none
+}
+
+.arr:hover {
+    background: rgba(0, 0, 0, .7);
+    text-decoration: none;
+}
+
+.hwslider:hover .arr {
+    display: block;
+    text-decoration: none;
+    color: #fff
+}
+
+.prev {
+    left: 20px
+}
+
+.next {
+    right: 20px
+}
+
+#hwslider ul li:last-child {
+    background: #f90;
+    text-align: center;
+}
+
+#hwslider ul li:last-child h4 {
+    height: 42px;
+    margin: 20% auto;
+    font-size: 48px;
+    color: #fff;
+}
+
+.intro {
+    position: absolute;
+    left: 12%;
+    top: 70%;
+    width: 42%;
+    min-width: 240px;
+    background: rgba(0, 0, 0, .5);
+    padding: 6px;
+    z-index: 2;
+    color: #fff;
+    line-height: 26px
+}
+.intro:hover{
+    background-color: rgba(0, 0, 0, .3 );
+}
+
+#otherhwSlider ul li:first-child {
+    background: #f90;
+    text-align: center;
+}
+
+#otherhwSlider h4 {
+    height: 42px;
+    margin: 16% auto;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#otherhwSlider p {
+    line-height: 24px;
+}
+
+#otherhwSlider pre {
+    padding-top: 10%;
+    padding-left: 15%;
+    display: block;
+    height: 100%;
+    background: #f00;
+    color: #fff
+}
+
+#otherhwSlider ul li:last-child {
+    background: #360;
+    color: #fff;
+    text-align: center;
+}
